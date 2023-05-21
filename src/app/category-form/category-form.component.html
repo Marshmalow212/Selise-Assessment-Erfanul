@@ -1,0 +1,44 @@
+<div class="container mt-4">
+    <div class="row py-2">
+        <div class="d-flex-justify-content-center offset-3">
+            <p class="fs-4">Add Bookmark</p>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="offset-3">
+            <input id="title" type="text" [formControl]="title" placeholder="Title">
+
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="offset-3">
+            <input id="url" type="text" [formControl]="url" placeholder="https://google.com">
+
+        </div>
+
+    </div>
+    <div class="row py-2">
+        <div class="offset-3">
+            <select id="category" [formControl]="category">
+                <option value="catA" *ngFor="let cn of catNames">{{cn}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row py-2"></div>
+    <div class="row py-2">
+        <div class="col-6">
+            <div class="d-flex justify-content-center">
+                <button type="button" (click)="checkChange()"> Cancel </button>
+
+            </div>
+            
+        </div>
+        <div class="col-6">
+            <div class="d-flex justify-content-center">
+                <button type="button" (click)="checkChange()"> Save </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

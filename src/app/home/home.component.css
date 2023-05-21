@@ -1,0 +1,6 @@
+.category-container{
+    height: 600px;
+    max-height: 600px;
+    overflow: scroll;
+    border: 2px black;
+}
